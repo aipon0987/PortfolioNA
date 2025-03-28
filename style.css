@@ -1,10 +1,16 @@
 @charset "UTF-8";
 
-
 body{
     color: #383e45;
     font-size: 0.9rem;
     font-size: 100%;
+    background-image: url(img/sora.jpg);/* 背景画像を設定 */
+    background-size: cover;  /* 画像を画面全体にフィットさせる */
+    background-position: center center;  /* 画像の位置を中央に */
+    background-repeat: no-repeat;  /* 画像の繰り返しを無効にする */
+    background-attachment: fixed;  /* 背景を固定 */
+    height: 100vh;  /* ビューポートの高さに合わせて背景を設定 */
+    margin: 0;
 }
 a{
     text-decoration: none;
@@ -14,9 +20,6 @@ img{
 }
 li{
     list-style: none;
-}
-background-image {
-    src: ("portfolio_haikei1.jpg");
 }
 /*
 loading作成
@@ -100,6 +103,7 @@ loading作成
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
+    font-weight: bold;
 }
 #header ul{
     display: flex;
@@ -117,6 +121,7 @@ loading作成
 
 #mainvisual{
     margin-bottom: 80px;
+    font-weight: bold;
 }
 #mainvisual img{
     width: 100%;
@@ -129,6 +134,7 @@ loading作成
     display: flex;
     justify-content: center;
     align-items: center;
+    font-weight: bold;
 }
 #about img{
     width: 100px;
@@ -140,12 +146,24 @@ loading作成
     text-align: left;
 }
 
+.colored {
+    color: red;
+    font-weight: bold;
+}
+#app h3 {
+    color: purple;
+}
 #app ul{
     display: flex;
     justify-content: space-between;
+    font-weight: bold;
 }
 #app li{
     width: 32%;
+    font-weight: bold;
+}
+#app p {
+    font-weight: bold;
 }
 #app ul li img {
     width: 250px;
@@ -153,10 +171,22 @@ loading作成
     object-fit: cover;
 }
 
+.text-left {
+    list-style-position: inside;
+    margin: 0 auto;
+    text-align: center;
+    width: 50%;
+    font-weight: bold;
+}
+.text-left li {
+    text-align: left;
+}
+
 #footer{
     font-size: 0.5rem;
     padding: 10px 0;
     text-align: center;
+    font-weight: bold;
 }
 
 @media screen and (max-width: 600px){
@@ -169,10 +199,10 @@ loading作成
 #about img{
     margin-right: 0;
 }
-#bicycle ul{
+#app ul{
     flex-direction: column;
 }
-#bicycle li{
+#app li{
     width: 100%;
     margin-bottom: 30px;
 }

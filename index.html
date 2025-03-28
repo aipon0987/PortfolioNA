@@ -4,7 +4,7 @@
         <meta charset="utf-8">
 
         <title>Profile</title>
-        <meta name="description" content="テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト">
+        <meta name="description" content="ポートフォリオのWEBサイトです！">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="icon" href="https;//unpkg.com/ress/dist/ress.min.css"></link>
         <link rel="stylesheet" href="style.css"></link>
@@ -20,26 +20,27 @@
             <nav>
                 <ul>
                     <li><a href="#about">About</a></li>
-                    <li><a href="#app">Bicycle</a></li>
+                    <li><a href="#app">ポートフォリオ一覧</a></li>
+                    <li><a href="#shikaku">資格一覧</a></li>
                 </ul>
             </nav>
         </header>
 
         <main>
             <div id="mainvisual">
-                <img src="img/yoshi.jpg" alt="テキストテキストテキスト">
+                <img src="img/desctop2.jpg" alt="mメイン画像">
             </div>
 
             <section id="about" class="wrapper">
                 <h2 class="section-title">About</h2>
                 <div class="content">
-                    <img src="img/about.jpg" alt="テキストテキストテキスト">
+                    <img src="img/unnamed.png" alt="詳細説明">
                     <div class="text">
                         <h3 class="content-title">AIKO NISHIGATA</h3>
                         <p>
-                            ・2017年4月〜2021年12月　大手アパレルショップ店員正社員として入社<br>
-                            ・2022年3月〜　ITPM社員として入社<br>
-                            　ヘルプデスク2年→現在は開発PJのPMO
+                            ◆2017年4月〜2021年12月 大手アパレルショップ店員正社員として入社<br>
+                            ◆2022年3月〜 ITPM社員として入社<br>
+                            ◆ヘルプデスク2年→現在は開発PJのPMO
                         </p>
                     </div>
                 </div>
@@ -47,22 +48,40 @@
 
             <section id="app" class="wrapper">
                 <h2 class="section-title">ポートフォリオ一覧</h2>
+                <p class="colored">★各アプリのコードは下記画像をクリック★</p>
                 <ul>
                     <li>
-                        <img src="img/omikuji.png" alt="坂本坂本坂本">
-                        <h3 class="content-title">御神籤アプリ</h3>
+                        <a href="https://github.com/aipon0987/OmikujiApp" target="_blank">
+                            <img src="img/omikuji.png" alt="御神籤アプリ">
+                        </a>
+                        <h3 class="content-title">◆御神籤アプリ◆</h3>
                         <p>普通のおみくじが引けるアプリです！</p>
                     </li>
                     <li>
-                        <img src="img/shampoo.png" alt="坂本坂本坂本">
-                        <h3 class="content-title">イー・アル・シャンプー</h3>
+                        <a href="https://github.com/aipon0987/YieArShampoo" target="_blank">
+                            <img src="img/shampoo.png" alt="イー・アル・シャンプー">
+                        </a>
+                        <h3 class="content-title">◆イー・アル・シャンプー◆</h3>
                         <p>連打してタップ数が出るアプリです！</p>
                     </li>
                     <li>
-                        <img src="img/shoothing2.png" alt="坂本坂本坂本">
-                        <h3 class="content-title">サッカーdeシューティング</h3>
-                        <p>サッカーを題材としたシューティングゲームです！</p>
+                        <a href="https://github.com/aipon0987/shoothingApp" target="_blank">
+                            <img src="img/soccer3.png" alt="サッカーdeシューティング">
+                        </a>
+                        <h3 class="content-title">◆サッカーdeシューティング◆</h3>
+                        <p>サッカーを題材とした的当てゲームです！</p>
                     </li>
+                </ul>
+            </section>
+            
+            <section id="shikaku" class="wrapper">
+                <h2 class ="section-title">資格一覧</h2>
+                <ul class="text-left">
+                    <li>・英語技能検定 3級</li>
+                    <li>・秘書検定 3級</li>
+                    <li>・Excel VBA Basic</li>
+                    <li>・Bronze DBA Oracle Database Fundamentals(1Z0-085)</li>
+                    <li>・Oracle Database SQL(1Z0-071) ※5月取得予定</li>
                 </ul>
             </section>
         </main>
