@@ -1,11 +1,10 @@
-@charset "UTF-8"
+@charset "UTF-8";
 
-html{
-    font-size: 100%;
-}
+
 body{
     color: #383e45;
     font-size: 0.9rem;
+    font-size: 100%;
 }
 a{
     text-decoration: none;
@@ -16,6 +15,60 @@ img{
 li{
     list-style: none;
 }
+background-image {
+    src: ("portfolio_haikei1.jpg");
+}
+/*
+loading作成
+
+*/
+.loading_bg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100dvw;
+    height: 100dvh;
+    overflow: hidden;
+    background-color: white;
+    transition: all 0.5s
+}
+
+.loading_bg.loaded
+ {
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* HTML: <div class="loader"></div> */
+.loader {
+    width: fit-content;
+    font-weight: bold;
+    font-family: monospace;
+    text-shadow: 
+      0 0 0 rgb(255 0 0), 
+      0 0 0 rgb(0 255 0), 
+      0 0 0 rgb(0 0 255);
+    font-size: 30px;
+    animation: l32 1s infinite cubic-bezier(0.5,-2000,0.5,2000);
+  }
+  .loader:before {
+    content:"Loading...";
+  }
+  
+  @keyframes l32{
+    25%,100% {
+    text-shadow: 
+       0.03px -0.01px 0.01px rgb(255 0 0), 
+       0.02px  0.02px 0     rgb(0 255 0), 
+      -0.02px  0.02px 0     rgb(0 0 255);
+    }
+  }
+
 .site-title{
     width: 120px;
     line-height: 1px;
@@ -87,12 +140,17 @@ li{
     text-align: left;
 }
 
-#bicycle ul{
+#app ul{
     display: flex;
     justify-content: space-between;
 }
-#bicycle li{
+#app li{
     width: 32%;
+}
+#app ul li img {
+    width: 250px;
+    height: 500px;
+    object-fit: cover;
 }
 
 #footer{
